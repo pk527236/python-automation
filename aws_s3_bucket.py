@@ -5,7 +5,7 @@ s3_resource = boto3.resource("s3")
 s3_client = boto3.client("s3")
 
 def show_buckets(s3_resource):
-    print("📦 Existing Buckets:")
+    print("Existing Buckets:")
     for bucket in s3_resource.buckets.all():
         print(f" - {bucket.name}")
 
